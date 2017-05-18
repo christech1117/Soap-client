@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import Banner from '../components/layout/Banner.vue'
+import Banner from '@/components/layout/Banner'
 
 export default {
   components: { Banner },
