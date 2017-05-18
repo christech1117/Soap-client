@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto')
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@keyframes fadeInUp
+  0%
+    opacity: 0
+    transform: translateY(30px)
+  100%
+    opacity: 1
+    transform: translateY(0px)
+
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    transform: translateY(-30px)
+  100%
+    opacity: 1
+    transform: translateY(0px)
+
+$main-color: #3CB371
+$click-color: #2E8B57
+$white-color: #FFF
+$black-color: #000
+$back-color: #FAFAF5
+$content-color: #c2c1c1
+$red-color: #DB4343
+
+body
+  background: $back-color
+  text-align: center
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif
+  color: #555
+  font-size: 14px
+  line-height: 30px
+
+a
+  color: #555
+  text-decoration: none
+  +trans
+
+a:hover, a:focus
+  color: #555
+  text-decoration: none
+
+li
+  list-style: none
+
+img
+  max-width: 100%
+
+
+.banner-img
+  background: no-repeat center
+  height: 300px
+  margin-top: 70px
+  // margin-bottom: 55px
+  background-size: cover
+
+.btn
+  height: 30px
+  margin-bottom: 20px
+  padding: 0 20px
+  vertical-align: middle
+  background: $main-color
+  color: $white-color
+  font-size: 16px
+  font-weight: 300
+  line-height: 30px
+  border-radius: 0
+  border: 0
+  +trans
+  &:hover, &:active, &:focus
+    background: $click-color
+    border: 0
+    color: $white-color
+
+
+.slider
+  position: relative
+  background: url('https://unsplash.it/200/300') no-repeat center
+  height: 400px
+  margin-top: 65px
+  margin-bottom: 55px
+  background-size: cover
+
+.overlay
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 2
+  background: $black-color
+  opacity: .3
+  left: 0
+  top: 0
+
+.section-header
+  border-bottom: 2px solid #555
+  max-width: 15em
+  letter-spacing: .2em
+  margin: 30px auto
+  margin-bottom: 5px
+  h1
+    font-size: 26px
+
+.breadcrumb
+  background: transparent
+  font-size: 16px
+  padding: 0
+  a
+    &:hover
+      color: $main-color
+    &:active, &:focus
+      color: $click-color
+
+.line
+  margin: 20px auto
+  border-bottom: $click-color 2px solid
