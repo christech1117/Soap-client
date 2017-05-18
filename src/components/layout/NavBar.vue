@@ -11,20 +11,43 @@
           router-link.navbar-brand(:to="{ path: '/' }") Brand
         #top-navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li
-              router-link(:to="{ path: '/news' }") 最新消息
-            li
-              router-link(:to="{ path: '/productList' }") 商品介紹
-            li
-              router-link(:to="{ path: '/about' }") 關於我們
-            li
-              router-link(:to="{ path: '/contact' }") 聯絡我們
-            li
-              router-link(:to="{ path: '/login' }") 會員登入
+            li(v-for="menu in menus")
+              router-link(:to="{ path: menu.url }") {{menu.title}}
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      menus: [
+        {
+          id: 1,
+          title: '最新消息',
+          url: '/new'
+        },
+        {
+          id: 2,
+          title: '商品介紹',
+          url: '/productList'
+        },
+        {
+          id: 3,
+          title: '關於我們',
+          url: '/about'
+        },
+        {
+          id: 4,
+          title: '聯絡我們',
+          url: '/contact'
+        },
+        {
+          id: 5,
+          title: '會員登入',
+          url: '/login'
+        }
+      ]
+    }
+  }
 }
 </script>
 
