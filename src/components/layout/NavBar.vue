@@ -52,25 +52,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
-@mixin trans($t:0.5s,$td: 0s)
-  transition: $t $td
-
-@mixin flex_center
-  display: flex
-  justify-content: center
-  align-items: center
-
-@mixin size($w,$h: $w)
-  width: $w
-  height: $h
-
-$main-color: #3CB371
-$click-color: #2E8B57
-$white-color: #FFF
-$black-color: #000
-$back-color: #FAFAF5
-$content-color: #c2c1c1
-$red-color: #DB4343
+@import './static/css/style.sass'
 
 .navbar-default
   background: $back-color
