@@ -1,6 +1,6 @@
 <template lang="pug">
   .productList_container
-    router-link(:to="{ path: '/productList/singleItem' }")
+    router-link(:to="{ path: '/productList/:id' }")
       .cover(:style="bg_css")
         h3 {{product_data.name}}
       .info.text-left
@@ -8,7 +8,6 @@
         h4 NT$
           s {{product_data.price}}
           span.final_price NT${{final_price}}
-          p {{pro}}
     button.btn.btn-success(@click="add_cart") 加入購物車
     button.btn.btn-danger(@click="get_product") 加入收藏
 </template>

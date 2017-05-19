@@ -20,6 +20,6 @@ export default {
 .banner-img
   background: no-repeat center
   height: 300px
-  margin-top: 70px
+  // margin-top: 70px
   background-size: cover
 </style>

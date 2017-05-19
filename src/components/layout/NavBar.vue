@@ -1,6 +1,6 @@
 <template lang="pug">
   #nav-bar
-    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+    nav.navbar.navbar-default.navbar-top(role='navigation')
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#top-navbar')
@@ -59,7 +59,8 @@ export default {
   border: 0
   box-shadow: 0px 0px 10px gray
   font-size: 16px
-
+  margin-bottom: 0
+  
   .navbar-nav
     li
       a
