@@ -8,5 +8,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
+@import './static/css/style.sass'
+
 
 </style>

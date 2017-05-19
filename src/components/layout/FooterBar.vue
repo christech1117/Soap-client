@@ -1,5 +1,5 @@
 <template lang="pug">
-  #nav-footer
+  #footer-bar
       .top-footer
         .container
           .row
@@ -60,7 +60,6 @@ export default {
   text-align: left
   margin: 0 auto
   color: $white-color
-  font-weight: 200
   background: #313030
   color: $content-color
   p

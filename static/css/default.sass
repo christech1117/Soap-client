@@ -62,23 +62,23 @@ img
   // margin-bottom: 55px
   background-size: cover
 
-.btn
-  height: 30px
-  margin-bottom: 20px
-  padding: 0 20px
-  vertical-align: middle
-  background: $main-color
-  color: $white-color
-  font-size: 16px
-  font-weight: 300
-  line-height: 30px
-  border-radius: 0
-  border: 0
-  +trans
-  &:hover, &:active, &:focus
-    background: $click-color
-    border: 0
-    color: $white-color
+// .btn
+//   width: 90%
+//   margin: 5px 5px
+//   // padding: 0 20px
+//   // vertical-align: middle
+//   // background: $main-color
+//   // color: $white-color
+//   // font-size: 16px
+//   // font-weight: 300
+//   // line-height: 30px
+//   // border-radius: 0
+//   // border: 0
+//   +trans
+//   // &:hover, &:active, &:focus
+//   //   background: $click-color
+//   //   border: 0
+//   //   color: $white-color
 
 
 .slider
@@ -121,3 +121,52 @@ img
 .line
   margin: 20px auto
   border-bottom: $click-color 2px solid
+
+
+#login, #register, #forget-pass
+  .panel
+    +size(100%, 100%)
+    animation: fadeInDown 1s ease both
+    box-shadow: 0px 0px 10px gray
+    margin-top: 70px
+    margin-bottom: 20px
+    img
+      +size(200px)
+      margin-top: 20px
+
+  .btn
+    margin: 10px auto
+    font-weight: 500
+    line-height: 30px
+    +trans
+  .btn-block
+    +size(60%, 100%)
+      
+  .form-group
+    +size(100%)
+    label
+      font-size: 20px
+    i
+      margin-right: 10px
+      +trans
+    &:hover, &:focus
+      color: $main-color
+
+  .form-control
+    +size(50%, 100%)
+    display: inline
+    font-size: 16px
+    margin: 5px 10px
+    background: transparent
+    border: none
+    border-radius: 0px
+    outline: none
+    box-shadow: none
+    border-bottom: 1px solid gray
+    &:focus
+      border: none
+      outline: none
+      box-shadow: none
+      border-bottom: 2px solid $main-color
+      color: $black-color
+      

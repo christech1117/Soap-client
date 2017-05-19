@@ -1,5 +1,5 @@
 <template lang="pug">
-  #nav-header
+  #nav-bar
     nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
       .container
         .navbar-header
