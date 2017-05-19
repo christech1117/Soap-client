@@ -5,6 +5,8 @@ import Product from '@/page/Product'
 import Login from '@/page/Account/Login'
 import Register from '@/page/Account/Register'
 import ForgetPass from '@/page/Account/ForgetPass'
+import About from '@/page/About'
+import Contact from '@/page/Contact'
 
 Vue.use(Router)
 
@@ -16,7 +18,9 @@ export default new Router({
     { path: '/productList', name: 'Product', component: Product },
     { path: '/login', name: 'Login', component: Login },
     { path: '/register', name: 'Register', component: Register },
-    { path: '/forgetPass', name: 'ForgetPass', component: ForgetPass }
+    { path: '/forgetPass', name: 'ForgetPass', component: ForgetPass },
+    { path: '/about', name: 'About', component: About },
+    { path: '/contact', name: 'Contact', component: Contact }
   ],
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }

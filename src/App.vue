@@ -3,16 +3,19 @@
     <nav-bar></nav-bar>
     <router-view></router-view>
     <footer-bar></footer-bar>
+    
+    <back-top :defaultProps="300" :date="500"></back-Top>
   </div>
 </template>
 
 <script>
 import NavBar from './components/layout/NavBar.vue'
 import FooterBar from './components/layout/FooterBar.vue'
+import backTop from 'vue-backtop'
 
 export default {
   name: 'app',
-  components: { NavBar, FooterBar }
+  components: { NavBar, FooterBar, backTop }
 }
 </script>
 
