@@ -9,8 +9,8 @@
           s {{product_data.price}}
           span.final_price NT${{final_price}}
           p {{pro}}
-    button.btn(@click="add_cart") 加入購物車
-    button.btn.like(@click="get_product") 加入收藏
+    button.btn.btn-success(@click="add_cart") 加入購物車
+    button.btn.btn-danger(@click="get_product") 加入收藏
 </template>
 
 <script>
@@ -96,6 +96,8 @@ export default {
         content: "特價"
     h4
   .btn
-    border-left: 1px solid #eee
-    font-size: 13px
+    border-radius: 0
+    margin: 0px 1px 10px 1px
+    font-weight: 500
+    +trans
 </style>
