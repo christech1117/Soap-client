@@ -3,7 +3,7 @@
     <div class="loading" v-if="loading">
       Loading...
     </div>
-
+    
     <div v-if="error" class="error">
       {{ error }}
     </div>
@@ -15,29 +15,26 @@
 </template>
 
 <script>
-
 export default {
   data () {
     return {
       loading: false,
-      post: null,
+      product: null,
       error: null
     }
   },
   created () {
-    // 组件创建完后获取数据，
-    // 此时 data 已经被 observed 了
     this.fetchData()
   },
   watch: {
-    // 如果路由有变化，会再次执行该方法
     '$route': 'fetchData'
   },
   methods: {
     fetchData () {
       this.error = this.post = null
       this.loading = true
-      this.axios.get('http://awiclass.monoame.com/api/command.php?type=get&name=post/' + this.$route.params.id).then(response => {
+      this.axios.get('http://127.0.0.1:8000/api/product/' + this.$route.params.id).then(response => {
+        console.log(response.data)
         this.product = response.data
       })
     }
