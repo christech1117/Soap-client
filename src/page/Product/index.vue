@@ -77,7 +77,8 @@ export default {
     }
   },
   mounted () {
-    this.axios.get('http://127.0.0.1:8000/api/products').then(response => {
+    this.axios.get('http://localhost:3000/products').then(response => {
+      console.log(response.data)
       this.products = response.data
     })
   },

@@ -9,7 +9,8 @@
     </div>
 
     <div v-if="product" class="content">
-      <h2>{{ product.title }}</h2>
+      <h2>{{ product.name }}</h2>
+      <h3>{{ product.price }}</h3>
     </div>
   </div>
 </template>
@@ -33,8 +34,9 @@ export default {
     fetchData () {
       this.error = this.post = null
       this.loading = true
-      this.axios.get('http://127.0.0.1:8000/api/product/' + this.$route.params.id).then(response => {
+      this.axios.get('http://localhost:3000/products/' + this.$route.params.id).then(response => {
         console.log(response.data)
+        this.loading = false
         this.product = response.data
       })
     }
