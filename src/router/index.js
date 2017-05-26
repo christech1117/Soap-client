@@ -8,10 +8,12 @@ import Login from '@/page/Account/Login'
 import Register from '@/page/Account/Register'
 import ForgetPass from '@/page/Account/ForgetPass'
 import About from '@/page/About'
-import Contact from '@/page/Contact'
+import Contact from '../page/Contact'
 
 import Err404 from '../page/Error/404'
 import Err401 from '../page/Error/401'
+
+import Cart from '../page/Cart/count'
 
 Vue.use(Router)
 
@@ -33,6 +35,8 @@ export default new Router({
     { path: '/contact', name: 'Contact', component: Contact },
     { path: '/401', component: Err401, name: '401' },
     { path: '/404', component: Err404, name: '404' },
+
+    { path: '/cart', component: Cart, name: 'Cart' },
     // {
     //   path: '/errorpage',
     //   name: '错误页面',
