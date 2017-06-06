@@ -8,7 +8,8 @@
         h4 NT$
           s {{product_data.price}}
           span.final_price NT${{final_price}}
-    button.btn.btn-success(@click="add_cart") 加入購物車
+    // button.btn.btn-success(@click="add_cart") 加入購物車
+    button.btn.btn-success(@click="add_cart_new") 加入購物車
     button.btn.btn-danger(@click="get_product") 加入收藏
 </template>
 
@@ -17,7 +18,6 @@ export default {
   props: ['product_data', 'product_discount'],
   data () {
     return {
-
     }
   },
   watch: {
@@ -41,6 +41,10 @@ export default {
     },
     add_like () {
       return alert('已加到收藏清單')
+    },
+    add_cart_new () {
+      const shopProduct = this.product_data
+      this.$store.dispatch('add_cart', shopProduct)
     }
   },
   computed: {

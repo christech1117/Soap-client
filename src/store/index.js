@@ -8,7 +8,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    count: 0
+    count: 0,
+    todos: []
   },
   mutations: {
     increment (state) {
@@ -16,20 +17,22 @@ export default new Vuex.Store({
     },
     decrement (state) {
       state.count--
+    },
+    add_cart (state, shopProduct) {
+      state.todos.push(shopProduct)
     }
   },
   actions: {
-    increment (context) {
-      context.commit('increment')
+    increment (store) {
+      store.commit('increment')
     },
-    decrement (context) {
-      context.commit('decrement')
+    decrement (store) {
+      store.commit('decrement')
+    },
+    add_cart (store, shopProduct) {
+      store.commit('add_cart', shopProduct)
     }
   },
   // 嚴格模式，禁止直接修改 state
   strict: true
 })
-  // state,
-  // getters,
-  // actions,
-  // mutations,

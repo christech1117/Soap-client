@@ -44,9 +44,17 @@ export default {
           id: 5,
           title: '會員登入',
           url: '/login'
+        },
+        {
+          id: 6,
+          title: '購物車',
+          url: '/cart'
         }
       ]
     }
+  },
+  mounted () {
+    this.shop_amount = this.$store.state.todos.length
   }
 }
 </script>

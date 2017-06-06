@@ -1,9 +1,8 @@
 <template>
   <div>
-    <h1>vuex 测试</h1>
-    Clicked: {{ count }} times
-    <button @click="increment">+</button>
     <button @click="decrement">-</button>
+    {{ $store.state.count }}
+    <button @click="increment">+</button>
   </div>
 </template>
 
@@ -11,12 +10,17 @@
   // import { mapGetters, mapActions } from 'vuex'
 
   export default {
+    data () {
+      return {
+        count: 0
+      }
+    },
     methods: {
       increment () {
-        return this.$store.dispatch('increment')
+        this.$store.dispatch('increment')
       },
       decrement () {
-        return this.$store.dispatch('decrement')
+        this.$store.dispatch('decrement')
       }
     }
   }

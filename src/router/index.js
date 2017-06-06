@@ -13,7 +13,7 @@ import Contact from '../page/Contact'
 import Err404 from '../page/Error/404'
 import Err401 from '../page/Error/401'
 
-import Cart from '../page/Cart/count'
+import Cart from '../page/Cart'
 
 Vue.use(Router)
 

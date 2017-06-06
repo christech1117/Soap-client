@@ -1,8 +1,6 @@
-// import {  } from './mutations_types.js'
-
 export const increment = ({commit}) => {
-  commit('INCREMENT')
+  commit('increment')
 }
 export const decrement = ({commit}) => {
-  commit('DECREMENT')
+  commit('decrement')
 }
