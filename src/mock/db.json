@@ -1,0 +1,430 @@
+{
+  "SideBarMenus": [
+    {
+      "icon": "fa fa-home fa-lg",
+      "index": "/dashboard",
+      "title": "Dashboard"
+    },
+    {
+      "icon": "fa fa-user fa-lg",
+      "index": "/user",
+      "title": "人員管理"
+    },
+    {
+      "icon": "fa fa-file-text fa-lg",
+      "index": "/news",
+      "title": "最新消息",
+      "addButton": true
+    },
+    {
+      "icon": "fa fa-cubes fa-lg",
+      "index": "/productList",
+      "title": "商品管理",
+      "addButton": true
+    },
+    {
+      "icon": "fa fa-bars fa-lg",
+      "index": "4",
+      "title": "分類管理",
+      "subs": [
+        {
+          "index": "/navbarMenu",
+          "title": "巡覽列"
+        },
+        {
+          "index": "/productMenu",
+          "title": "商品分類"
+        }
+      ]
+    },
+    {
+      "icon": "fa fa-bar-chart fa-lg",
+      "index": "5",
+      "title": "數據統計",
+      "subs": [
+        {
+          "index": "/pieChart",
+          "title": "圓餅圖"
+        },
+        {
+          "index": "/mixChart",
+          "title": "綜合顯示圖"
+        }
+      ]
+    }
+  ],
+  "NavBarMenus": [
+    {
+      "id": 1,
+      "title": "最新消息",
+      "url": "/new",
+      "edit": false
+    },
+    {
+      "id": 2,
+      "title": "商品介紹",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 3,
+      "title": "關於我們",
+      "url": "/about",
+      "edit": false
+    },
+    {
+      "id": 4,
+      "title": "聯絡我們",
+      "url": "/contact",
+      "edit": false
+    },
+    {
+      "id": 5,
+      "title": "會員登入",
+      "url": "/login",
+      "edit": false
+    },
+    {
+      "id": 6,
+      "title": "購物車",
+      "url": "/cart",
+      "edit": false
+    }
+  ],
+  "ProductMenus": [
+    {
+      "id": 1,
+      "title": "特價商品",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 2,
+      "title": "熱銷商品",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 3,
+      "title": "各種膚質",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 4,
+      "title": "中油性膚質",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 5,
+      "title": "混合性膚質",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 6,
+      "title": "乾性膚質",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 7,
+      "title": "嬰兒膚質",
+      "url": "/productList",
+      "edit": false
+    },
+    {
+      "id": 8,
+      "title": "敏感性膚質",
+      "url": "/productList",
+      "edit": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "create_at": "2017/06/18",
+      "name": "劉秀",
+      "image": "https://i2.kknews.cc/large/ba40005787a346d7035",
+      "mail": "abcc456@yahoo.com.tw",
+      "phone": "0920-123-201",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 2,
+      "create_at": "2016-05-04",
+      "name": "陰麗華",
+      "image": "http://juji123.com/img2/role/00/08/71/p00087154.jpg",
+      "mail": "abcc45678@gmail.com",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 3,
+      "create_at": "2016-05-01",
+      "name": "馮異",
+      "image": "http://static.zhidao.manmankan.com/kimages/201607/25_1469419129144715.png",
+      "mail": "jasidjasi@gmail.com",
+      "phone": "0920-123-456",
+      "tag": "家",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 4,
+      "create_at": "2016-05-03",
+      "name": "子陵",
+      "image": "http://img.zxtzx.com/file/20160815/d7ee54bd1cf7d8f6a06f5c56905702cf.jpg",
+      "mail": "vmvmk@yahoo.com.tw",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 5,
+      "create_at": "2016-05-03",
+      "name": "鄧奉",
+      "image": "http://www.gaochengnews.net/d/file/p/2017-04-03/9cdc0c57375c2d8f7d259c5ef7afe407.jpg",
+      "mail": "feeling221@hotmail.com",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 6,
+      "create_at": "2016-05-08",
+      "name": "陰識",
+      "image": "http://img1.gtimg.com/ent/pics/hv1/165/135/2105/136912215.jpg",
+      "mail": "abcc456@yahoo.com.tw",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 7,
+      "create_at": "2016-05-18",
+      "name": "陰興",
+      "image": "http://imgtu.lishiquwen.com/20160920/3279954caa021ea116e81ad3d08230d7.jpg",
+      "mail": "abcc456@yahoo.com.tw",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 8,
+      "create_at": "2016-05-20",
+      "name": "陰戟",
+      "image": "http://img.chinatimes.com/newsphoto/2013-10-02/656/n18a00_p_04_01.jpg",
+      "mail": "feeling221@gmail.com",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 9,
+      "create_at": "2016-06-01",
+      "name": "阿禹",
+      "image": "https://i1.read01.com/uploads/0DEQ8w02.jpg",
+      "mail": "abcc456@yahoo.com.tw",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 10,
+      "create_at": "2016-06-03",
+      "name": "劉伯升",
+      "image": "https://i1.kknews.cc/large/106a000180404a4008d4",
+      "mail": "963vc745@yahoo.com.tw",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "id": 11,
+      "create_at": "2016-06-03",
+      "name": "劉玄",
+      "image": "http://www.wsm.cn/uploads/allimg/160723/26-160H31GA5.jpg",
+      "mail": "Adsjkd1127@yahoo.com.tw",
+      "phone": "0920-123-456",
+      "tag": "公司",
+      "edit": false,
+      "auth": true
+    },
+    {
+      "name": "",
+      "image": "",
+      "mail": "6555",
+      "phone": "222",
+      "tag": "公司",
+      "edit": false,
+      "auth": true,
+      "create_at": "2017/06/18",
+      "id": 12
+    }
+  ],
+  "products": [
+    {
+      "name": "手工皂三入木禮盒",
+      "price": "850",
+      "image": "https://www.tfb8000.com/tool/openfiledbkey.aspx?File=71|6D|8D|B0|B3|AC|84|9A|A8|B3|AC|A3|97|B0|AA|BB|BC|B9|AC|A3|8A|77|78|77|78|77|78|77|78|7A|7E|75|B0|B4|AE|79|6D|97|B6|BE|AC|B9|93|AC|BD|AC|B3|84|9F|&FileSave=%e6%8e%80%e8%93%8b1m.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 4,
+      "create_at": "2017/06/18",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "生活保濕乳",
+      "price": 900,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/138/20161115173455546_bp.jpg",
+      "edit": false,
+      "auth": false,
+      "score": 4.8,
+      "create_at": "2017/06/18"
+    },
+    {
+      "id": 3,
+      "name": "潔",
+      "price": 140,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/182/20170309113517722_bp.jpg",
+      "edit": false,
+      "auth": false,
+      "score": 1.2,
+      "create_at": "2017/06/18"
+    },
+    {
+      "id": 4,
+      "name": "源",
+      "price": 140,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/184/20170309114104730_bp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 2.4,
+      "create_at": "2016-05-10"
+    },
+    {
+      "id": 5,
+      "name": "綠茶皂",
+      "price": 180,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/187/20170309132421742_bp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 5,
+      "create_at": "2016-05-08"
+    },
+    {
+      "id": 6,
+      "name": "茶樹皂",
+      "price": 180,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/174/20170309104857690_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 1.2,
+      "create_at": "2016-03-27"
+    },
+    {
+      "id": 7,
+      "name": "艾草香茅皂",
+      "price": 180,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/175/20170309110151694_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 4.5,
+      "create_at": "2016-06-11"
+    },
+    {
+      "id": 8,
+      "name": "清新柑橘皂",
+      "price": 180,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/176/20170309110826698_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 1,
+      "create_at": "2016-06-11"
+    },
+    {
+      "id": 9,
+      "name": "葡萄酒粕皂",
+      "price": 200,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/177/20170309111803702_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 2.3,
+      "create_at": "2016-05-25"
+    },
+    {
+      "id": 10,
+      "name": "煥采果醋皂",
+      "price": 220,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/178/20170309112127706_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 4.9,
+      "create_at": "2016-05-25"
+    },
+    {
+      "id": 11,
+      "name": "五葉松皂",
+      "price": 220,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/179/20170309112712710_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 3.6,
+      "create_at": "2016-04-11"
+    },
+    {
+      "id": 12,
+      "name": "茉草皂",
+      "price": 220,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/180/20170309112909714_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 1.5,
+      "create_at": "2016-05-11"
+    },
+    {
+      "id": 13,
+      "name": "高山皂",
+      "price": 270,
+      "image": "https://www.teasoap.com.tw/downloads/product/10000/1000/181/20170309113233718_sp.jpg",
+      "edit": false,
+      "auth": true,
+      "score": 4,
+      "create_at": "2016-04-11"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "【拈花微笑】植萃護手霜/護唇膏全新上",
+      "image": "https://www.taiwansoap.com.tw/_upload/htmlEdit/1475812275.jpg",
+      "description": "在翩翩香氣裡我們循著記憶的軌跡重返心靈歸屬之地\n在溫柔的力量中重拾初心的美好\n在植物芬芳中延續展開，轉化成人生旅途上的美好\n讓植物化開的芳香因子引領我們至美好純淨之地\n拈一朵花品芬芳精油芬芳，心手呵護\n乳油木果油、天然大豆萃取、醣基海藻糖、阿原複方精油，保濕滋潤、修護活化肌膚\n玫瑰護手霜(滋潤)-酵母及磨菇萃取等滋養成分，賦予肌膚保濕彈性，適合手部乾燥者\n橙花護手霜(保濕)-小黃瓜萃取及獨特鎖水磁石長效保濕成分，適合手部需要保濕潤澤者\n茉莉護手霜(透亮)-吟釀麴及桑白皮萃取淨白成分，適合手部黯沉者\n苦橙葉護手霜(修護)-積雪草、洋甘菊舒緩修護成分，適合手部粗糙、需加強養護者\n亮澤豐潤，唇真動人\n乳油木果油、蜂蠟、可可籽脂、阿原複方精油，保濕潤澤、增強肌膚防護力\n玫瑰護唇膏(滋潤)-荷荷芭油及玫瑰果籽油強化滋潤，適合唇部需要高度滋潤者\n燕麥護唇膏(倍護)-燕麥仁萃取及桃拓酚植萃配方，無精油添加，適合唇部敏感脆弱、兒童等\n檸檬護唇膏(透亮)-葡萄籽油及油茶籽油，增加唇部透亮豐盈，適合唇部需要光量潤澤者\n苦橙葉護唇膏(修護)-楔基海帶萃取舒緩防護雙唇，適合唇部需要修護防護者",
+      "edit": false,
+      "auth": false,
+      "create_at": "2017/06/18"
+    },
+    {
+      "id": 2,
+      "title": "【生活香-平安】全新上市 ",
+      "image": "https://www.taiwansoap.com.tw/_upload/htmlEdit/1466474596.jpg",
+      "description": "意，領會醞釀著\n那清煙的馥郁溫暖是上天與土地的恩賜轉瞬即逝的煙影\n是留下了一室的香氣滿溢拈念，是掠過眼前的光影難忘舊時光的美好曾經用心作的香氣\n依然在記憶深處淡淡的在心頭輕聲低語",
+      "edit": false,
+      "auth": true,
+      "create_at": "2017-06-17"
+    }
+  ]
+}

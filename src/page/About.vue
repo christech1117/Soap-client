@@ -1,6 +1,6 @@
 <template lang="pug">
   #about
-    .banner-img(style="background-image: url('http://demo.mor-e.com.tw/demo/yatia/images/main/ce99d9306219b43ff4a11a2c68cd6bc5.jpg')")
+    banner(:banner_data="banner_img")
     .container
       .section-header
         h1
@@ -22,7 +22,22 @@
 </template>
 
 <script>
+import Banner from '@/components/layout/Banner'
+
 export default {
+  components: { Banner },
+  data () {
+    return {
+      banner_img: 'http://demo.mor-e.com.tw/demo/yatia/images/main/ce99d9306219b43ff4a11a2c68cd6bc5.jpg'
+    }
+  },
+  computed: {
+    bg_css () {
+      return {
+        'background-image': "url('" + this.product.image + "')"
+      }
+    }
+  }
 }
 </script>
 

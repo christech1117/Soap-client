@@ -30,14 +30,14 @@ export default {
       var products = {
         name: this.product_data.name,
         price: this.product_data.price,
-        cover: this.product_data.cover
+        image: this.product_data.image
       }
       data.push(products)
       localStorage.setItem('productData', JSON.stringify(data))
     },
     get_product (data) {
-      var getData = localStorage.getItem('productData')
-      return alert(getData)
+      // var getData = localStorage.getItem('productData')
+      // return alert(getData)
     },
     add_like () {
       return alert('已加到收藏清單')
@@ -53,7 +53,7 @@ export default {
     },
     bg_css () {
       return {
-        'background-image': "url('" + this.product_data.cover + "')"
+        'background-image': "url('" + this.product_data.image + "')"
       }
     }
   }

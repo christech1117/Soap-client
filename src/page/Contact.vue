@@ -1,6 +1,6 @@
 <template lang="pug">
   #contact
-    .banner-img(style="background-image: url('http://demo.mor-e.com.tw/demo/yatia/images/main/c854332138261a24a47fb3342d600a9b.jpg')")
+    banner(:banner_data="banner_img")
     .section-header
       h1
         i.fa.fa-phone.fa(aria-hidden='true')
@@ -43,12 +43,29 @@
 </template>
 
 <script>
+import Banner from '@/components/layout/Banner'
+
 export default {
+  components: { Banner },
+  data () {
+    return {
+      banner_img: 'http://demo.mor-e.com.tw/demo/yatia/images/main/c854332138261a24a47fb3342d600a9b.jpg'
+    }
+  },
+  computed: {
+    bg_css () {
+      return {
+        'background-image': "url('" + this.product.image + "')"
+      }
+    }
+  }
 }
 </script>
 
 <style scoped lang="sass">
 @import './static/css/style.sass'
 
-
+#contact
+  font-weight: 400
+  animation: fadeIn 1s ease both
 </style>

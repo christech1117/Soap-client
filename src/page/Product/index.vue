@@ -15,8 +15,8 @@
         .col-sm-3
           h3 產品展示
           ul
-            li(v-for="side_menu in side_menus")
-              router-link(:to="{ path: side_menu.url }") {{side_menu.title}}
+            li(v-for="ProductMenu in ProductMenus")
+              router-link(:to="{ path: ProductMenu.url }") {{ ProductMenu.title }}
         .col-sm-9
           .col-sm-4.col_product(v-for="product in products")
             shop-card(:product_data="product", :product_discount="discount")
@@ -32,54 +32,17 @@ export default {
       banner_img: 'http://demo.mor-e.com.tw/demo/yatia/images/main/6b149f1fdc0c0f8e2cc4594a60ec0b03.jpg',
       products: [],
       discount: 0.5,
-      side_menus: [
-        {
-          id: 1,
-          title: '特價商品',
-          url: '/productList'
-        },
-        {
-          id: 2,
-          title: '熱銷商品',
-          url: '/productList'
-        },
-        {
-          id: 3,
-          title: '各種膚質',
-          url: '/productList'
-        },
-        {
-          id: 4,
-          title: '中油性膚質',
-          url: '/productList'
-        },
-        {
-          id: 5,
-          title: '混合性膚質',
-          url: '/productList'
-        },
-        {
-          id: 6,
-          title: '乾性膚質',
-          url: '/productList'
-        },
-        {
-          id: 7,
-          title: '嬰兒膚質',
-          url: '/productList'
-        },
-        {
-          id: 8,
-          title: '敏感性膚質',
-          url: '/productList'
-        }
-      ]
+      ProductMenus: []
     }
   },
   mounted () {
     this.axios.get('http://localhost:3000/products').then(response => {
       console.log(response.data)
       this.products = response.data
+    })
+    this.axios.get('http://localhost:3000/ProductMenus').then(response => {
+      console.log(response.data)
+      this.ProductMenus = response.data
     })
   },
   computed: {

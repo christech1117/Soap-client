@@ -1,9 +1,8 @@
-<template>
-  <div>
-    <button @click="decrement">-</button>
-    {{ $store.state.count }}
-    <button @click="increment">+</button>
-  </div>
+<template lang="pug">
+  div
+    // button.btn.btn-success(@click="decrement") -
+    span {{ $store.state.count }}
+    // button.btn.btn-success(@click="increment") +
 </template>
 
 <script>
@@ -26,3 +25,7 @@
   }
 
 </script>
+<style lang="sass">
+span
+  margin: 0px 20px
+</style>

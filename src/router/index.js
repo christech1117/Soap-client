@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '@/page/Home'
+import News from '@/page/News'
 import Product from '@/page/Product'
 import SingleProduct from '@/page/Product/SingleProduct'
 import Login from '@/page/Account/Login'
@@ -26,6 +27,7 @@ export default new Router({
     //   redirect: '/readme'
     // },
     { path: '/', component: Home },
+    { path: '/new', name: 'News', component: News },
     { path: '/productList', name: 'Product', component: Product },
     { path: '/productList/:id', name: 'SingleProduct', component: SingleProduct },
     { path: '/login', name: 'Login', component: Login },
